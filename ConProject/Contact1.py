@@ -1,0 +1,26 @@
+class Contact:
+    """
+    __init__ 생성자 생성
+    print(self) 함수 생성
+    """
+    
+    def __init__(self, name, phone_number, e_mail, addr):
+        self.name = name
+        self.phone_number = phone_number
+        self.e_mail = e_mail
+        self.addr = addr
+        
+    def print(self):
+        print("name : "+ self.name)
+        print("phone_number : " + self.phone_number)
+        print("e_mail : " + self.e_mail)
+        print("addr : " + self.addr)
+        
+def run():
+    #인스턴스 생성
+    choi = Contact('최' , '010-0000-0000', 'c@c.com', '인천')
+    choi.print()
+
+if __name__ == "__main__":
+    run()
+        
